@@ -1,0 +1,43 @@
+{"menu":[
+
+		{
+			"type":"newgame",
+			"item":0,
+			"description":"When pressed this will start a new game.",
+			"image":"menu0.png"
+		},
+		{
+			"type":"continue",
+			"item":1,
+			"description":"When pressed, this will load progress of last saved game.",
+			"image":"menu1.png"
+		},
+		{
+			"type":"load",
+			"item":2,
+			"description":"When pressed, the last saved game will load",
+			"image":"menu2.png"
+		},
+		{
+			"type":"help",
+			"item":3,
+			"description":"When pressed, the help slideshow will be generated",
+			"image":"menu3.png"
+		},
+		{
+			"type":"settings",
+			"item":4,
+			"description":"When pressed, the settings page will be generated",
+			"image":"menu5.png"
+		},
+		{
+			"type":"exit",
+			"item":5,
+			"description":"Will close the app.",
+			"image":"menu4.png"
+		}
+		
+	
+	]
+	
+}

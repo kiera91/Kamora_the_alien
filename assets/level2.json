@@ -1,0 +1,70 @@
+{"levels":[
+		{
+		"level":{
+			"number": 2,
+			"type":"accelerometer",
+			"linear":"1.5f",
+			"size":[800,960]
+		},
+		"background":[
+			{
+				"layer_number":1,
+				"image_name":"bonus_wall.png",
+				"image_size":[800, 480],
+				"position":[0,0],
+				"parallax":["0f", "0f"]
+			}
+		],	
+		"maincharacter": {
+			"image_name": "maincharacter_frames1.png",
+			"image_size": [487,348], 
+			"position": [100, 250],
+			"scale":"0.5f"
+		},
+		   
+		"collectableItem": [
+			{
+				"item_score":1,
+				"image_name": "diamond.png",
+				"image_size": [30,30], 
+				"position": [[110, 170],[180, 170],[550, 350],[550, 350]],
+				"user_data":"main_diamond"
+			},	
+			{
+				"item_score":10,
+				"image_name": "bonus_diamond.png",
+				"image_size": [30,30], 
+				"position": [[330, 320],[565, 160],[350, 80],[720, 330],[720, 100],[10,10],[100, 100],[200, 200],[300, 300],[400, 400]],
+				"user_data":"bonus_diamond"
+			}		
+		],	
+		
+		"bonusWall":[
+			{	
+				"rotation":0.0,
+				"image_name": "bonus_rocksUS.png",
+				"image_size": [20, 80],
+				"position": [[150, 150],[690, 300]],
+				"user_data":"wall"
+			},
+			{
+				"rotation":90.0,
+				"image_name": "bonus_rocksUS.png",
+				"image_size": [20, 80],
+				"position": [[350, 100]],
+				"user_data":"wall"
+			},
+			{
+				"rotation":0.0,
+				"image_name": "bonus_rocksUB.png",
+				"image_size": [80, 20],
+				"position": [[150, 300],[250,200]],
+				"user_data":"wall"
+			}
+		],
+		
+		"music":"level2",
+							
+		"end_of_level": 15,
+		"next_level":3
+	} ]}

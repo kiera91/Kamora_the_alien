@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/save_button"
+          android:title="About"
+          android:showAsAction="always" />
+    
+    <item android:id="@+id/back_button"
+          android:title="Go Back"
+          android:showAsAction="always" />
+</menu>

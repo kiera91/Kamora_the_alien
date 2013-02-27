@@ -1,0 +1,150 @@
+{"levels":[
+	{
+		"level":{
+			"number": 1,
+			"type":"main",
+			"type":"accelerometer-velocity",
+			"linear":"1.0f",
+			"velocity":"60f, 0f",
+			"size":[8600,960]
+		},
+						
+		"floor":{
+			"image_name": "space_floor.png",
+			"image_size": [2048,350]
+		},
+		
+		"frontfloor":{
+			"image":"crystals_front.png",
+			"image_size":[2048, 250]
+		},
+		
+		"background":[
+			{
+				"layer_number":1,
+				"image_name":"space_sky.png",
+				"image_size":[800, 512],
+				"position":[0,0],
+				"parallax":["0f", "0f"]
+			},
+			{
+				"layer_number":2,
+				"image_name":"space_moon.png",
+				"image_size":[60, 60],
+				"position":[35,70],
+				"parallax":["-0.001f", "0f"]
+			},
+			{
+				"layer_number":3,
+				"image_name":"space_planet.png",
+				"image_size":[2048, 300],
+				"position":[0,0],
+				"parallax":["-0.05f", "1f"]
+			}
+		],
+			
+		"maincharacter": {
+			"image_name": "maincharacter_frames1.png",
+			"image_size": [487,348], 
+			"position": [10, 250],
+			"scale":"1f"
+		},
+		   
+		"enemies": {
+			"timer":"5f",
+			"image_name": "enemy.png", 
+			"image_size": [100,100], 
+			"starting_point": [1000, 0],
+			"particleEffects":{
+				"image":"particle_enemy.png",
+				"direction": [5, 15],
+				"velocity": [15, 22, -60, -90],
+				"colour": ["1.0f", "0.0f", "0.0f"]
+			}
+		},
+		   
+		  "collectableItem": [
+			{
+				"item_score":1,
+				"image_name": "diamond.png",
+				"image_size": [30,30], 
+				"position": [[150, 200],[350, 300],[550, 100]],
+				"user_data":"main_diamond"
+			},
+			{
+				"item_score":1,
+				"image_name":"heart.png",
+				"image_size":[30,30],
+				"position":[[1150, 200]],
+				"user_data":"heart"
+			}		
+		],	
+							
+		"harmfulObject":[
+			{
+				"image_name": "spike1.png",
+				"image_size": [50, 40],
+				"position": [[700, 350],[1500,350]],
+				"user_data":"spikes",
+				"animated":0
+			},
+			{
+				"image_name": "lava.png",
+				"image_size": [900, 250],
+				"position": [[600, 335]],
+				"user_data":"lava",
+				"animated":1,
+				"particleEffects":{
+					"image":"particle_enemy.png",
+					"direction": [5, 15],
+					"velocity": [15, 22, -60, -90],
+					"colour": ["1.0f", "0.0f", "0.0f"]
+				}
+			}
+		],	
+		
+		"otherItems":[
+			{
+				"image_name":"spaceship.png",
+				"image_size":[279,165],
+				"position":[[4850,220]],
+				"user_data":"spaceship"
+			}
+		],
+		
+		"friendlyBullet":{
+			"image_name": "friendly_bullet.png",
+			"image_size": [20, 20],
+			"velocity":["60f", "0f"]
+		},
+		
+		"enemyBullet":{
+			"image_name": "enemy_bullet.png",
+			"image_size": [20, 20],
+			"velocity":["25f", "0f"]
+		},
+				
+		"stillPlatform":[
+			{
+				"image_name": "space_platform.png",
+				"image_size": [80, 60],
+				"position": [[150, 300],[250,200]],
+				"user_data": "still_platform"
+			}
+		],
+				
+		"movingPlatform":[
+			{
+				"image_name": "space_platform.png",
+				"image_size": [80, 60],
+				"position": [[360, 200],[1200,200]],
+				"user_data":"moving"
+			}
+		],
+		
+		"music":"level1",
+
+		"end_of_level": 4600,
+		"next_level":2
+	}
+]}

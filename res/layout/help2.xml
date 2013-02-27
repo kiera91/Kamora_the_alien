@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="litle alien"
+        android:paddingLeft="150dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/controls_r" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image1"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingTop="20dp"
+        android:text="@string/P2_info1"
+        android:textColor="#c6e460"
+        android:textSize="7pt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/image1"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="30dp"
+        android:text="@string/P2_info2"
+        android:textColor="#c6e460"
+        android:textSize="7pt" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="@string/P2_p1"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:contentDescription="litle alien"
+        android:paddingBottom="7dp"
+        android:paddingLeft="200dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/enemy" />
+
+</RelativeLayout>

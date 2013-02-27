@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">How To Play The Game!</string>
+    <string name="app_name">Kamora The Alien</string>
+    <string name="P1_p1">You are in control of an Alien called Kamora, a leader on the planet of Aromak.</string>
+    <string name="P1_p2">It is your job to control him through each level, to do this, use the left and right on-screen controls.</string>
+    <string name="swipe_left">(swipe left for the next slide)</string>
+    <string name="P1_info1">The left hand controls controls Kamora\'s left and right movements.</string>
+    <string name="P2_p1">As you make your way through the levels, you will certainly run into Aromak Police.  They have turned evil and are now set against Aromak\'s leaders (that\'s you).</string>
+    <string name="P2_info1">The &quot;up&quot; button does the jumping.</string>
+    <string name="P2_info2">The &quot;right&quot; button will shoot bullets (your energy needs a second to recharge, so use it wisely).</string>
+    <string name="swipe_right">(swipe right for the previous slide)</string>
+    <string name="P3_p1">These police can show up any time, so you gotta be on your guard.  They will shoot their energy ions at you, and don\'t bump into them either!</string>
+    <string name="P3_p2">You have 6 lives to get you through, your life is displayed at the top of the screen.</string>
+    <string name="P3_p3">You can regenerate your life bu collecting certain items throughout the levels.</string>
+    <string name="P4_p1">As well as the police, there are harmful items along the way, watch out for these as they\'ll take your life.</string>
+    <string name="P4_p2">Along the way, there are items you should collect, for every 100 points you get, your life bar will fill.</string>
+    <string name="P4_p3">If at any time you want to pause the game, hit the button.</string>
+    <string name="P5_p1">The bonus levels are powered by the accelerometer on your phone.  That means to move Kamora, you need to tilt your phone.  It will also be on a time limit, which will get more challenging as you progress through the game, so make sure you learn to control him.</string>
+	<string name="about1">This app was created by Kiera O\'Reilly as a final year project.  It is a combination of a game engine for Android - Andengine, and pure Android code.</string>
+	<string name="settings1">Settings</string>
+	<string name="settingsAudio">I want the music\.\.\.</string>
+	<string name="checkUpdate">Check For Updates.</string>
+</resources>

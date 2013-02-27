@@ -1,0 +1,358 @@
+{
+    "type": "object",
+   	"properties":{
+   		"levels":{
+   			"type":"array",
+   			"items":{
+   				"type":"object",
+   		
+		    	"properties": {
+		        	"level": {
+		            	"type": "object",
+		            	"description": "The level",
+		            	"properties":{
+		            		"number":{
+		            			"type":"number"
+		            		},
+		            		"type":{
+		            			"type":"string"
+		            		}	
+		            	},
+		            	"required": true
+		        	},
+				
+		        	"floor": {
+		        	    "type": "object",
+		        	    "description": "Floor object containing image and size",
+		        	    "properties":{
+							"image":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							}
+						
+						}
+		        	},
+		        	
+		        	"frontfloor":{
+		        		"type":"object",
+		        		"description":"image place in front of character",
+		        		 "properties":{
+							"image":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							}
+						
+						}
+		        	},
+				
+		        	"background": {
+		        	    "type": "array",
+		        	    "description":"Background object containing one or more layers",
+		        	    "items": {
+							"properties":{
+								"layer_number":{
+									"type":"number"
+								},
+								"image":{
+									"type":"string"
+								},
+								"image_size":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									}
+								},
+								"position":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									}
+								},
+								"parallax":{
+									"type":"array",
+									"items":{
+										"type":"string"
+									}	
+								}
+							}
+						}
+					},	
+				
+					"maincharacter": {
+		        	    "type": "object",
+		        	    "properties": {
+		        	        "image_m":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"position":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"scale":{
+								"type":"string"
+							}	
+						}	
+		        	},
+				
+		        	"enemies": {
+		            	"type": "object",
+		            	"properties": {
+		            	    "image_name":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"starting_point":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"particleEffects":{
+								"type":"object",
+								"properties": {
+									"direction":{
+									"type":"array",
+										"items":{
+											"type":"number"
+										}
+									},
+									"velocity":{
+									"type":"array",
+										"items":{
+											"type":"number"
+										}
+									},
+									"colour":{
+									"type":"array",
+										"items":{
+											"type":"string"
+										}
+									}
+								
+								}
+							}
+						}
+					},
+				
+					"collectableItem":{
+						"type":"array",
+						"items":{
+							"properties":{
+								"item_type":{
+									"type":"string"
+								},	
+								"item_score":{
+									"type":"number"
+								},
+								"image":{
+									"type":"string"
+								},	
+								"image_size":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									}
+								},
+								"postition":{
+									"type":"array",
+									"items":{
+										"type":"array",
+										"items":"number"
+									}
+								}
+							}
+						}
+					},
+				
+					"randomItems":{
+						"type":"array",
+						"items":{
+							"properties":{
+								"item_type":{
+									"type":"string"
+								},	
+								"image":{
+									"type":"string"
+								},	
+								"image_size":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									}
+								},
+								"postition":{
+									"type":"array",
+									"items":{
+										"type":"array",
+										"items":"number"
+									}
+								}
+							}
+						}
+					},
+					
+					"bonusWall":{
+						"type":"array",
+						"items":{
+							"properties":{
+								"image":{
+									"type":"string"
+								},	
+								"image_size":{
+									"type":"array",
+									"items":{
+										"type":"number"
+									}
+								},
+								"postition":{
+									"type":"array",
+									"items":{
+										"type":"array",
+										"items":"number"
+									}
+								}
+							}
+						}
+					},
+					
+					"harmfulObject":{
+						"type":"array",
+						"properties":{
+							"harmful_object":{
+								"type":"object",
+								"properties":{
+									"object_type":{
+										"type":"string"
+									},	
+									"image":{
+										"type":"string"
+									},	
+									"image_size":{
+										"type":"array",
+										"items":{
+											"type":"number"
+										}
+									},
+									"postition":{
+										"type":"array",
+										"items":{
+											"type":"array",
+											"items":"number"
+										}
+									}
+								}
+							}
+						}
+					},
+				
+					"frieldlyBullet":{
+						"type":"object",
+						"properties":{
+							"image":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"velocity":{
+								"type":"array",
+								"items":{
+									"type":"string"
+								}	
+							}
+						}	
+					},
+				
+					"stillPlatform":{
+						"type":"array",
+							"properties":{
+								"user_data":{
+									"type":"string"
+								},
+								"image_name":{
+									"type":"string"
+								},
+								"image_size":{
+									"type":"array",
+									"items":{
+										"type":"number"
+										}
+								},
+								"postition":{
+									"type":"array",
+									"items":{
+										"type":"array",
+										"items":"number"
+									}
+								}
+							}
+						}
+					},
+				
+					"movingPlatform":{
+						"type":"array",
+						"properties":{
+							"user_data":{
+								"type":"string"
+							},
+							"image_name":{
+								"type":"string"
+							},
+							"image_size":{
+								"type":"array",
+								"items":{
+									"type":"number"
+								}
+							},
+							"postition":{
+								"type":"array",
+								"items":{
+									"type":"array",
+									"items":"number"
+								}
+							}
+						}
+					},
+					
+					"music":{
+						"type":"string"
+					},		
+				
+					"end_of_level":{
+						"type":"number"
+					},
+				
+					"next_level":{
+						"type":"number"
+					}	
+				}
+			}	
+		}
+	}
+}			

@@ -1,0 +1,13 @@
+{"game_settings":[
+		{
+			"gravity":23.12,
+			
+			"controls":{
+				"left_control":"onscreen_control_base.png",
+				"left_size":[128,128],
+				"right_control":"right_pad.png",
+				"right_size":[128,128]
+			}
+		}
+	]
+}	

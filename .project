@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Kamora_the_alien</name>
+	<comment></comment>
+	<projects>
+		<project>AndEngine</project>
+		<project>AndEngineMultiTouchExtension</project>
+		<project>AndEnginePhysicsBox2DExtension</project>
+		<project>JSON-validation</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Box2D</name>
+			<type>2</type>
+			<location>/Applications/eclipse/Eclipse.app/Contents/MacOS/D::/Workspace/Android/AndEnginePhysicsBox2DExtension/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

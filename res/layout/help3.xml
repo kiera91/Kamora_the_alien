@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/P3_p1"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:contentDescription="litle alien"
+        android:paddingLeft="150dp"
+        android:paddingTop="7dp"
+        android:src="@drawable/enemy_bullet" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:paddingTop="7dp"
+        android:text="@string/P3_p2"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:contentDescription="litle alien"
+        android:paddingLeft="150dp"
+        android:paddingTop="7dp"
+        android:src="@drawable/heart_tiled" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:text="@string/P3_p3"
+        android:textColor="#FFFFFF"
+        android:textSize="9pt" />
+
+</RelativeLayout>
